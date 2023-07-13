@@ -1,0 +1,36 @@
+HTTP1 VS HTTP2
+The Hypertext Transfer Protocol (HTTP) is the standard protocol used for transferring data over the web. It is the foundation of data communication on the World Wide Web. The two most widely used versions of this protocol are HTTP1.1 and HTTP2. In this blog, we will compare the differences between HTTP1.1 and HTTP2.
+
+HTTP1.1:
+
+HTTP1.1 is the most commonly used version of HTTP. It was released in 1999 and has been the de facto standard for web communication for over 20 years. The following are some of the characteristics of HTTP1.1:
+
+Connection-oriented: In HTTP1.1, each request/response cycle requires a separate TCP connection. This means that multiple requests from the same client will result in multiple connections, which can slow down the response time.
+
+Head-of-Line blocking: In HTTP1.1, requests and responses are sent in the order they are received, and if one request is blocked, subsequent requests are also blocked. This results in slower response times, especially when loading web pages with multiple resources.
+
+Compression: HTTP1.1 supports compression of data, but it is not mandatory. This means that not all web servers and browsers support compression, resulting in slower data transfer.
+
+No Server Push: HTTP1.1 does not support server push, which means that the server cannot send resources to the client before the client requests them. This results in slower page loading times.
+
+HTTP2:
+
+HTTP2 is the latest version of HTTP, released in 2015. It was designed to address the performance limitations of HTTP1.1. The following are some of the characteristics of HTTP2:
+
+Binary Protocol: HTTP2 uses a binary protocol instead of a text-based protocol, which makes it more efficient.
+
+Multiplexing: HTTP2 allows multiple requests to be sent over a single TCP connection. This eliminates the need for multiple connections and improves response times.
+
+Stream Prioritization: HTTP2 allows requests to be prioritized, which ensures that the most important requests are processed first.
+
+Server Push: HTTP2 allows the server to push resources to the client before the client requests them. This reduces page loading times.
+
+Header Compression: HTTP2 uses a more efficient header compression algorithm, which reduces the overhead associated with sending headers.
+
+In summary, HTTP2 offers significant improvements over HTTP1.1 in terms of performance and efficiency. It addresses the limitations of HTTP1.1 by introducing features like binary protocol, multiplexing, stream prioritization, server push, and improved header compression. While HTTP1.1 is still widely used, HTTP2 is quickly gaining popularity and is expected to become the standard for web communication in the near future
+
+objects and its internal representation in Javascript:
+
+In JavaScript, an object is a collection of properties represented using hash tables. Each property is a key-value pair, and objects can be created using object literals or constructor functions. When an object is assigned to a variable, the variable holds a reference to the object's memory location. This allows for efficient access and modification of properties. Understanding the internal representation of objects in JavaScript is crucial for writing efficient and optimized code.
+
+
